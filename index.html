@@ -1,285 +1,326 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mojtaba Amor | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mojtaba Amor – Administrateur systèmes, réseaux et cybersécurité</title>
+<meta name="description" content="Portfolio de Mojtaba Amor, étudiant en Bachelor Administrateur Systèmes, Réseaux et Cybersécurité à l’IMIE, en recherche d’alternance.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="hero">
-    <div class="hero-content">
-        <h1>Mojtaba Amor</h1>
-        <h2>Administrateur Systèmes, Réseaux & Cybersécurité</h2>
-
-        <p>
-            Étudiant en Bachelor Administrateur Systèmes, Réseaux et Cybersécurité,
-            passionné par les infrastructures Windows/Linux, les réseaux Cisco
-            et la cybersécurité.
-        </p>
-
-        <div class="buttons">
-            <a href="#" class="btn">Télécharger mon CV</a>
-            <a href="#projets" class="btn btn-outline">Voir mes projets</a>
-        </div>
-    </div>
+<header class="site-header">
+  <div class="wrap bar">
+    <a href="#accueil" class="brand">Mojtaba Amor</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" class="nav">
+      <a href="#accueil">Accueil</a>
+      <a href="#apropos">À propos</a>
+      <a href="#competences">Compétences</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="btn btn-outline bar-cta">Me contacter</a>
+  </div>
 </header>
 
-<section>
-    <h2>À propos de moi</h2>
+<main>
 
-    <p>
-        Actuellement étudiant en Bachelor Administrateur Systèmes, Réseaux et
-        Cybersécurité à l'IMIE.
-    </p>
+<!-- ACCUEIL -->
+<section id="accueil" class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="hello">Bonjour, je suis Mojtaba</p>
+      <h1>Administrateur systèmes, réseaux et cybersécurité</h1>
+      <p class="lead">Étudiant en Bachelor à l’IMIE, je cherche une alternance à partir de septembre 2027. Voici les infrastructures que j’ai montées, supervisées et sécurisées.</p>
+      <div class="actions">
+        <a href="#portfolio" class="btn btn-solid">Voir mes projets</a>
+        <a href="cv.pdf" class="btn btn-outline" download>Télécharger mon CV</a>
+      </div>
+    </div>
 
-    <p>
-        J'ai développé mes compétences à travers de nombreux projets techniques
-        autour de Windows Server, Active Directory, VMware, Cisco, GLPI,
-        Zabbix, Wazuh, Nessus et OpenVPN.
-    </p>
+    <div class="terminal" aria-label="Résumé de profil sous forme de terminal">
+      <div class="term-top"><i></i><i></i><i></i><span>mojtaba@lab:~</span></div>
+      <pre><span class="c">$</span> whoami
+Mojtaba Amor
 
-    <p>
-        Je renforce également mes connaissances grâce à TryHackMe et Hack The Box.
-    </p>
+<span class="c">$</span> cat formation.txt
+Bachelor Admin. Systèmes, Réseaux
+et Cybersécurité (Bac+3) – IMIE
+
+<span class="c">$</span> cat stack.txt
+Windows Server · Linux · VMware
+Cisco · Zabbix · Wazuh · Nessus
+
+<span class="c">$</span> status
+<span class="ok">●</span> disponible pour une alternance<span class="cursor"></span></pre>
+    </div>
+  </div>
+
+  <div class="wrap stats">
+    <div><strong>9</strong><span>projets documentés</span></div>
+    <div><strong>Sept. 2027</strong><span>début d’alternance souhaité</span></div>
+    <div><strong>6</strong><span>attestations RGPD (CNIL)</span></div>
+    <div><strong>THM · HTB</strong><span>pratique du hacking éthique</span></div>
+  </div>
 </section>
 
-<section>
+<!-- A PROPOS -->
+<section id="apropos" class="section">
+  <div class="wrap about">
+    <div>
+      <h2>À propos</h2>
+      <p>Après un Baccalauréat général (spécialités NSI et SES), je me suis orienté vers l’informatique. Je suis aujourd’hui en deuxième année de Bachelor Administrateur Systèmes, Réseaux et Cybersécurité à l’IMIE.</p>
+      <p>J’aime comprendre comment les systèmes fonctionnent et progresser par des projets pratiques. Je complète ma formation par de l’auto-apprentissage et des exercices de hacking éthique sur TryHackMe et Hack The Box.</p>
+      <p>Mon objectif : construire une base solide en systèmes, réseaux et sécurité pour devenir un professionnel fiable, rigoureux et capable d’apporter des solutions efficaces.</p>
+      <a href="cv.pdf" class="btn btn-solid" download>Télécharger mon CV</a>
+    </div>
+    <dl class="facts">
+      <div><dt>Recherche</dt><dd>Alternance en administration systèmes, réseaux et cybersécurité</dd></div>
+      <div><dt>Langues</dt><dd>Français, arabe, anglais (intermédiaire)</dd></div>
+      <div><dt>Permis</dt><dd>Permis B</dd></div>
+      <div><dt>Loisirs</dt><dd>Voyage, natation, jeux vidéo, randonnée</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- COMPETENCES -->
+<section id="competences" class="section alt">
+  <div class="wrap">
     <h2>Compétences</h2>
-
-    <div class="grid">
-
-        <div class="card">
-            <h3>Systèmes</h3>
-            <ul>
-                <li>Windows Server 2022 & 2025</li>
-                <li>Active Directory</li>
-                <li>GPO</li>
-                <li>DNS</li>
-                <li>DHCP</li>
-                <li>Windows 10 & 11</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h3>Linux</h3>
-            <ul>
-                <li>Ubuntu</li>
-                <li>Debian</li>
-                <li>Kali Linux</li>
-                <li>SSH</li>
-                <li>Administration Linux</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h3>Réseaux</h3>
-            <ul>
-                <li>TCP/IP</li>
-                <li>VLAN</li>
-                <li>STP</li>
-                <li>OSPF</li>
-                <li>ACL</li>
-                <li>Routage Inter-VLAN</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h3>Cybersécurité</h3>
-            <ul>
-                <li>Wazuh</li>
-                <li>Nessus</li>
-                <li>OpenVPN</li>
-                <li>SSL/TLS</li>
-                <li>Veille technologique</li>
-            </ul>
-        </div>
-
+    <div class="skills">
+      <article>
+        <h3>Systèmes</h3>
+        <ul class="chips"><li>Windows Server 2022 / 2025</li><li>Windows 10 / 11</li><li>Debian</li><li>Ubuntu</li><li>Kali Linux</li><li>Active Directory</li><li>GPO</li><li>DNS</li><li>DHCP</li><li>Utilisateurs et droits d’accès</li></ul>
+      </article>
+      <article>
+        <h3>Virtualisation</h3>
+        <ul class="chips"><li>VMware ESXi</li><li>VMware Workstation</li><li>VirtualBox</li></ul>
+      </article>
+      <article>
+        <h3>Réseaux</h3>
+        <ul class="chips"><li>TCP/IP</li><li>VLAN</li><li>Routage inter-VLAN</li><li>OSPF</li><li>STP</li><li>ACL</li><li>Redondance</li><li>SSH / PuTTY</li><li>Cisco Packet Tracer</li></ul>
+      </article>
+      <article>
+        <h3>Supervision et cybersécurité</h3>
+        <ul class="chips"><li>Zabbix</li><li>Wazuh (SIEM)</li><li>Nessus</li><li>OpenVPN</li><li>SSL/TLS</li><li>Hacking éthique</li><li>Veille technologique</li><li>Sensibilisation</li></ul>
+      </article>
+      <article>
+        <h3>Support et outils</h3>
+        <ul class="chips"><li>GLPI</li><li>Ticketing</li><li>Gestion de parc</li><li>Microsoft 365</li></ul>
+      </article>
+      <article>
+        <h3>Développement web</h3>
+        <ul class="chips"><li>HTML</li><li>CSS</li><li>WordPress</li><li>Elementor</li></ul>
+      </article>
     </div>
+  </div>
 </section>
 
-<section id="projets">
-    <h2>Mes Projets</h2>
+<!-- PORTFOLIO -->
+<section id="portfolio" class="section">
+  <div class="wrap">
+    <h2>Portfolio</h2>
+    <p class="intro">Chaque projet peut afficher jusqu’à trois captures. Cliquez sur une image pour l’agrandir.</p>
 
-    <div class="project">
-
-        <h3>Active Directory & GPO</h3>
-
-        <p>
-            Déploiement d'un domaine Active Directory avec gestion des utilisateurs,
-            groupes, droits d'accès et stratégies de groupe.
-        </p>
-
-        <div class="capture">
-            CAPTURE AD USERS AND COMPUTERS
-        </div>
-
-        <div class="capture">
-            CAPTURE GPO
-        </div>
-
+    <div class="filters" role="group" aria-label="Filtrer les projets">
+      <button class="on" data-filter="all">Tous</button>
+      <button data-filter="systemes">Systèmes</button>
+      <button data-filter="reseaux">Réseaux</button>
+      <button data-filter="securite">Supervision et sécurité</button>
+      <button data-filter="web">Web</button>
     </div>
 
-    <div class="project">
+    <div class="projects">
 
-        <h3>VMware & Services Réseau</h3>
+      <!-- ============ MODÈLE POUR AJOUTER UN PROJET : copiez un bloc <article> ci-dessous ============ -->
 
-        <p>
-            Déploiement d'infrastructures virtualisées avec DNS, DHCP
-            et accès à distance.
-        </p>
-
-        <div class="capture">
-            CAPTURE VMWARE
+      <article class="project" data-cat="systemes">
+        <div class="shots">
+          <button class="shot" data-full><span class="ph">Capture à ajouter<code>images/ad-1.png</code></span><img src="images/ad-1.png" alt="Active Directory – capture 1"></button>
+          <button class="shot" data-full><span class="ph">Capture<code>images/ad-2.png</code></span><img src="images/ad-2.png" alt="Active Directory – capture 2"></button>
+          <button class="shot" data-full><span class="ph">Capture<code>images/ad-3.png</code></span><img src="images/ad-3.png" alt="Active Directory – capture 3"></button>
         </div>
+        <h3>Active Directory et stratégies de groupe</h3>
+        <p>Installation de Windows Server et déploiement d’un annuaire Active Directory : création des utilisateurs et des groupes, gestion des droits d’accès, application de GPO.</p>
+        <ul class="chips"><li>Windows Server</li><li>Active Directory</li><li>GPO</li></ul>
+      </article>
 
-    </div>
-
-    <div class="project">
-
-        <h3>Gestion de Parc avec GLPI</h3>
-
-        <p>
-            Installation et configuration de GLPI, inventaire du parc,
-            gestion des utilisateurs et ticketing.
-        </p>
-
-        <div class="capture">
-            CAPTURE DASHBOARD GLPI
+      <article class="project" data-cat="systemes reseaux">
+        <div class="shots">
+          <button class="shot" data-full><span class="ph">Capture à ajouter<code>images/services-1.png</code></span><img src="images/services-1.png" alt="Services réseau – capture 1"></button>
+          <button class="shot" data-full><span class="ph">Capture<code>images/services-2.png</code></span><img src="images/services-2.png" alt="Services réseau – capture 2"></button>
+          <button class="shot" data-full><span class="ph">Capture<code>images/services-3.png</code></span><img src="images/services-3.png" alt="Services réseau – capture 3"></button>
         </div>
+        <h3>Services réseau et accès à distance</h3>
+        <p>Configuration de l’adressage IP, du DNS, du DHCP et de l’accès à distance des serveurs, avec réplication des serveurs et des services.</p>
+        <ul class="chips"><li>DNS</li><li>DHCP</li><li>VMware ESXi</li><li>VMware Workstation</li></ul>
+      </article>
 
-    </div>
-
-    <div class="project">
-
-        <h3>Supervision Zabbix</h3>
-
-        <p>
-            Installation du serveur Zabbix, ajout d'hôtes,
-            tableaux de bord et supervision.
-        </p>
-
-        <div class="capture">
-            CAPTURE ZABBIX
+      <article class="project" data-cat="systemes">
+        <div class="shots">
+          <button class="shot" data-full><span class="ph">Capture à ajouter<code>images/glpi-1.png</code></span><img src="images/glpi-1.png" alt="GLPI – capture 1"></button>
+          <button class="shot" data-full><span class="ph">Capture<code>images/glpi-2.png</code></span><img src="images/glpi-2.png" alt="GLPI – capture 2"></button>
+          <button class="shot" data-full><span class="ph">Capture<code>images/glpi-3.png</code></span><img src="images/glpi-3.png" alt="GLPI – capture 3"></button>
         </div>
+        <h3>Gestion de parc informatique avec GLPI</h3>
+        <p>Installation de GLPI pour l’inventaire du parc, le ticketing (incidents, support aux utilisateurs) et la gestion des utilisateurs.</p>
+        <ul class="chips"><li>GLPI</li><li>ITSM</li><li>Ticketing</li></ul>
+      </article>
 
-    </div>
-
-    <div class="project">
-
-        <h3>SIEM Wazuh</h3>
-
-        <p>
-            Déploiement d'agents et analyse des événements de sécurité.
-        </p>
-
-        <div class="capture">
-            CAPTURE WAZUH
+      <article class="project" data-cat="securite">
+        <div class="shots">
+          <button class="shot" data-full><span class="ph">Capture à ajouter<code>images/zabbix-1.png</code></span><img src="images/zabbix-1.png" alt="Zabbix – capture 1"></button>
+          <button class="shot" data-full><span class="ph">Capture<code>images/zabbix-2.png</code></span><img src="images/zabbix-2.png" alt="Zabbix – capture 2"></button>
+          <button class="shot" data-full><span class="ph">Capture<code>images/zabbix-3.png</code></span><img src="images/zabbix-3.png" alt="Zabbix – capture 3"></button>
         </div>
+        <h3>Supervision avec Zabbix</h3>
+        <p>Installation et configuration de Zabbix, ajout d’hôtes et suivi de leur état.</p>
+        <ul class="chips"><li>Zabbix</li><li>Supervision</li></ul>
+      </article>
 
-    </div>
-
-    <div class="project">
-
-        <h3>Analyse de Vulnérabilités avec Nessus</h3>
-
-        <p>
-            Réalisation de scans de vulnérabilités et analyse des résultats.
-        </p>
-
-        <div class="capture">
-            CAPTURE NESSUS
+      <article class="project" data-cat="securite">
+        <div class="shots">
+          <button class="shot" data-full><span class="ph">Capture à ajouter<code>images/wazuh-1.png</code></span><img src="images/wazuh-1.png" alt="Wazuh – capture 1"></button>
+          <button class="shot" data-full><span class="ph">Capture<code>images/nessus-1.png</code></span><img src="images/nessus-1.png" alt="Nessus – capture 1"></button>
+          <button class="shot" data-full><span class="ph">Capture<code>images/wazuh-2.png</code></span><img src="images/wazuh-2.png" alt="Wazuh – capture 2"></button>
         </div>
+        <h3>Sécurité avec Wazuh et Nessus</h3>
+        <p>Mise en place de Wazuh (SIEM) et analyse de vulnérabilités avec Nessus.</p>
+        <ul class="chips"><li>Wazuh</li><li>SIEM</li><li>Nessus</li></ul>
+      </article>
 
-    </div>
-
-    <div class="project">
-
-        <h3>Cisco Packet Tracer</h3>
-
-        <p>
-            Mise en œuvre des VLAN, OSPF, ACL,
-            STP et Routage Inter-VLAN.
-        </p>
-
-        <div class="capture">
-            CAPTURE TOPOLOGIE CISCO
+      <article class="project" data-cat="reseaux">
+        <div class="shots">
+          <button class="shot" data-full><span class="ph">Capture à ajouter<code>images/packet-tracer-1.png</code></span><img src="images/packet-tracer-1.png" alt="Packet Tracer – capture 1"></button>
+          <button class="shot" data-full><span class="ph">Capture<code>images/packet-tracer-2.png</code></span><img src="images/packet-tracer-2.png" alt="Packet Tracer – capture 2"></button>
+          <button class="shot" data-full><span class="ph">Capture<code>images/packet-tracer-3.png</code></span><img src="images/packet-tracer-3.png" alt="Packet Tracer – capture 3"></button>
         </div>
+        <h3>Architecture réseau sous Cisco Packet Tracer</h3>
+        <p>VLAN, routage inter-VLAN, OSPF, STP, ACL, redondance réseau et accès SSH.</p>
+        <ul class="chips"><li>VLAN</li><li>OSPF</li><li>STP</li><li>ACL</li><li>SSH</li></ul>
+      </article>
 
-    </div>
-
-    <div class="project">
-
+      <article class="project" data-cat="reseaux securite">
+        <div class="shots">
+          <button class="shot" data-full><span class="ph">Capture à ajouter<code>images/openvpn-1.png</code></span><img src="images/openvpn-1.png" alt="OpenVPN – capture 1"></button>
+          <button class="shot" data-full><span class="ph">Capture<code>images/openvpn-2.png</code></span><img src="images/openvpn-2.png" alt="OpenVPN – capture 2"></button>
+          <button class="shot" data-full><span class="ph">Capture<code>images/openvpn-3.png</code></span><img src="images/openvpn-3.png" alt="OpenVPN – capture 3"></button>
+        </div>
         <h3>VPN OpenVPN</h3>
+        <p>Mise en place d’un accès distant sécurisé avec chiffrement SSL/TLS.</p>
+        <ul class="chips"><li>OpenVPN</li><li>SSL/TLS</li></ul>
+      </article>
 
-        <p>
-            Accès distant sécurisé et configuration SSL/TLS.
-        </p>
-
-        <div class="capture">
-            CAPTURE OPENVPN
+      <article class="project" data-cat="web">
+        <div class="shots">
+          <button class="shot" data-full><span class="ph">Capture à ajouter<code>images/wordpress-1.png</code></span><img src="images/wordpress-1.png" alt="WordPress – capture 1"></button>
+          <button class="shot" data-full><span class="ph">Capture<code>images/wordpress-2.png</code></span><img src="images/wordpress-2.png" alt="WordPress – capture 2"></button>
+          <button class="shot" data-full><span class="ph">Capture<code>images/wordpress-3.png</code></span><img src="images/wordpress-3.png" alt="WordPress – capture 3"></button>
         </div>
+        <h3>Site web WordPress</h3>
+        <p>Création d’un site avec WordPress et Elementor, avec des ajustements en HTML et CSS.</p>
+        <ul class="chips"><li>WordPress</li><li>Elementor</li><li>HTML</li><li>CSS</li></ul>
+      </article>
 
-    </div>
-
-    <div class="project">
-
-        <h3>Site Web WordPress</h3>
-
-        <p>
-            Création d'un site web avec WordPress et Elementor.
-        </p>
-
-        <div class="capture">
-            CAPTURE SITE WEB
+      <article class="project" data-cat="web">
+        <div class="shots">
+          <button class="shot" data-full><span class="ph">Capture à ajouter<code>images/masaveur-1.png</code></span><img src="images/masaveur-1.png" alt="Maquette MaSaveur – capture 1"></button>
+          <button class="shot" data-full><span class="ph">Capture<code>images/masaveur-2.png</code></span><img src="images/masaveur-2.png" alt="Maquette MaSaveur – capture 2"></button>
+          <button class="shot" data-full><span class="ph">Capture<code>images/masaveur-3.png</code></span><img src="images/masaveur-3.png" alt="Maquette MaSaveur – capture 3"></button>
         </div>
+        <h3>Page web HTML/CSS : MaSaveur</h3>
+        <p>Page d’accueil d’un service de repas livrés, écrite à la main en HTML et CSS.</p>
+        <ul class="chips"><li>HTML</li><li>CSS</li><li>GitHub Pages</li></ul>
+      </article>
+
+      <article class="project" data-cat="securite">
+        <div class="shots">
+          <button class="shot" data-full><span class="ph">Capture à ajouter<code>images/thm-1.png</code></span><img src="images/thm-1.png" alt="TryHackMe – capture 1"></button>
+          <button class="shot" data-full><span class="ph">Capture<code>images/htb-1.png</code></span><img src="images/htb-1.png" alt="Hack The Box – capture 1"></button>
+          <button class="shot" data-full><span class="ph">Capture<code>images/kali-1.png</code></span><img src="images/kali-1.png" alt="Kali Linux – capture 1"></button>
+        </div>
+        <h3>Hacking éthique : TryHackMe et Hack The Box</h3>
+        <p>Exercices pratiques d’auto-apprentissage en environnement de laboratoire : reconnaissance, analyse de vulnérabilités et bonnes pratiques de sécurité.</p>
+        <ul class="chips"><li>TryHackMe</li><li>Hack The Box</li><li>Kali Linux</li></ul>
+      </article>
 
     </div>
-
+  </div>
 </section>
 
-<section>
-    <h2>Formation</h2>
+<!-- PARCOURS -->
+<section id="parcours" class="section alt">
+  <div class="wrap">
+    <h2>Parcours et certifications</h2>
+    <ol class="timeline">
+      <li>
+        <h3>Bachelor Administrateur Systèmes, Réseaux et Cybersécurité (Bac+3)</h3>
+        <p>IMIE, 2ᵉ année en cours (2026-2027). Alternance recherchée pour la 3ᵉ année, à partir de septembre 2027.</p>
+      </li>
+      <li>
+        <h3>Titre Professionnel TSSR</h3>
+        <p>Technicien Supérieur Systèmes et Réseaux, préparation en cours.</p>
+      </li>
+      <li>
+        <h3>6 attestations de suivi RGPD</h3>
+        <p>Formation à la protection des données personnelles, délivrée par la CNIL.</p>
+      </li>
+      <li>
+        <h3>Baccalauréat général, spécialités NSI et SES</h3>
+        <p>Lycée Condorcet, Montreuil.</p>
+      </li>
+    </ol>
+  </div>
+</section>
 
-    <div class="card">
-        <h3>IMIE</h3>
-
-        <p>
-            Bachelor Administrateur Systèmes,
-            Réseaux et Cybersécurité
-        </p>
-
-        <p>
-            2ème année en cours
-        </p>
+<!-- TEMOIGNAGES -->
+<section id="temoignages" class="section">
+  <div class="wrap">
+    <h2>Témoignages</h2>
+    <div class="quotes">
+      <figure>
+        <blockquote>Un collaborateur sérieux, impliqué et toujours prêt à apprendre. Mojtaba a démontré une excellente capacité à résoudre des problèmes techniques, à s’adapter rapidement et à travailler de manière autonome. Son sens de l’organisation et sa rigueur ont été très appréciés.</blockquote>
+        <figcaption>Responsable IT</figcaption>
+      </figure>
+      <figure>
+        <blockquote>Mojtaba a montré une excellente compréhension des environnements systèmes et des bonnes pratiques de cybersécurité. Il analyse, documente et exécute ses tâches avec précision. Un profil prometteur et très agréable à accompagner.</blockquote>
+        <figcaption>Administrateur Systèmes et Réseaux</figcaption>
+      </figure>
     </div>
+  </div>
 </section>
 
-<section>
-    <h2>Certifications</h2>
-
-    <div class="card">
-        <ul>
-            <li>TSSR (Préparation en cours)</li>
-            <li>6 attestations RGPD CNIL</li>
-        </ul>
+<!-- CONTACT -->
+<section id="contact" class="section alt">
+  <div class="wrap contact">
+    <div>
+      <h2>Me contacter</h2>
+      <p>Je recherche une alternance en administration systèmes, réseaux et cybersécurité. Écrivez-moi ou appelez-moi.</p>
     </div>
+    <ul class="contact-list">
+      <li><span>E-mail</span><a href="mailto:mojtabaamor7@gmail.com">mojtabaamor7@gmail.com</a></li>
+      <li><span>Téléphone</span><a href="tel:+33669339440">+33 6 69 33 94 40</a></li>
+      <li><span>CV</span><a href="cv.pdf" download>Télécharger le CV (PDF)</a></li>
+    </ul>
+  </div>
 </section>
 
-<section>
-    <h2>Contact</h2>
+</main>
 
-    <div class="card">
-        <p>Email : mojtabrmor7@gmail.com</p>
-        <p>GitHub : github.com/mojtaba-amor</p>
-        <p>LinkedIn : À ajouter</p>
-    </div>
-</section>
-
-<footer>
-    <p>© 2026 Mojtaba Amor</p>
+<footer class="footer">
+  <div class="wrap">© 2026 Mojtaba Amor. Tous droits réservés.</div>
 </footer>
 
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lb-close" aria-label="Fermer">Fermer</button>
+  <img alt="">
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
