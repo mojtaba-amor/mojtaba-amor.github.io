@@ -172,9 +172,9 @@ body, h1, h2, h3, p, dl, dd, figure, blockquote, ul, ol { margin: 0; }
 .terminal__dot--yellow { background: #fbbf24; }
 .terminal__dot--green { background: #34d399; }
 .terminal__title { margin-left: 0.6rem; }
-.terminal__body { padding: 1.9rem 2rem 2.2rem; font: 1.05rem/1.8 var(--mono); min-height: 26rem; }
+.terminal__body { padding: 1.3rem 1.4rem 1.5rem; font: 0.95rem/1.7 var(--mono); min-height: 17.5rem; }
 .terminal__line { overflow-wrap: anywhere; }
-.terminal__line--gap { margin-top: 1.2rem; }
+.terminal__line--gap { margin-top: 0.7rem; }
 .terminal__line--out { color: #d9e1ff; }
 .terminal__line.is-pending { visibility: hidden; }
 .terminal__prompt { color: #8fb0ff; }
