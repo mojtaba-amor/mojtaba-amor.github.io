@@ -135,8 +135,8 @@ body, h1, h2, h3, p, dl, dd, figure, blockquote, ul, ol { margin: 0; }
   padding: 0;
   /* L'accueil remplit tout l'écran : la section suivante n'apparaît qu'en défilant */
   display: flex; flex-direction: column;
-  min-height: calc(100vh - var(--header-h) - 6px);
-  min-height: calc(100svh - var(--header-h) - 6px);
+  min-height: calc(100vh - var(--header-h) - 100px);
+  min-height: calc(100svh - var(--header-h) - 100px);
   /* Quadrillage discret, évoquant un schéma réseau */
   background-image:
     linear-gradient(var(--line) 1px, transparent 1px),
@@ -500,7 +500,7 @@ body, h1, h2, h3, p, dl, dd, figure, blockquote, ul, ol { margin: 0; }
 .contact-list__link:hover { text-decoration-thickness: 2px; }
 
 /* Accueil : remplit l'écran, contenu centré, bandeau de chiffres juste dessous, câble visible */
-.hero { min-height: calc(100vh - var(--header-h) - 50px); min-height: calc(100svh - var(--header-h) - 30px); }
+.hero { min-height: calc(100vh - var(--header-h) - 100px); min-height: calc(100svh - var(--header-h) - 100px); }
 .hero__grid { align-items: center; }
 .stats { margin-top: 1.5rem; padding: 1.5rem 0 1.5rem; }
 
