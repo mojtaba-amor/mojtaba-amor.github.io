@@ -133,6 +133,10 @@ body, h1, h2, h3, p, dl, dd, figure, blockquote, ul, ol { margin: 0; }
 .hero {
   position: relative;
   padding: clamp(3rem, 8vw, 6rem) 0 0;
+  /* L'accueil remplit tout l'écran : la section suivante n'apparaît qu'en défilant */
+  display: flex; flex-direction: column;
+  min-height: calc(100vh - var(--header-h) - 6px);
+  min-height: calc(100svh - var(--header-h) - 6px);
   /* Quadrillage discret, évoquant un schéma réseau */
   background-image:
     linear-gradient(var(--line) 1px, transparent 1px),
@@ -146,7 +150,7 @@ body, h1, h2, h3, p, dl, dd, figure, blockquote, ul, ol { margin: 0; }
 }
 .hero__grid, .hero__stats { position: relative; z-index: 1; }
 
-.hero__grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: clamp(2rem, 5vw, 4rem); align-items: center; }
+.hero__grid { flex: 1; display: grid; grid-template-columns: 1.05fr 0.95fr; gap: clamp(2rem, 5vw, 4rem); align-items: center; }
 .hero__title { font-size: clamp(2.8rem, 7vw, 5rem); font-weight: 800; line-height: 1.15; letter-spacing: -0.035em; margin-bottom: 0.6rem; }
 .hero__role { font-size: clamp(1.25rem, 2.4vw, 1.7rem); font-weight: 600; line-height: 1.25; margin-bottom: 1.25rem; max-width: 22ch; }
 .hero__lead { font-size: 1.15rem; color: var(--muted); margin-bottom: 2rem; }
