@@ -132,7 +132,7 @@ body, h1, h2, h3, p, dl, dd, figure, blockquote, ul, ol { margin: 0; }
 /* ---------- 5. Accueil ---------- */
 .hero {
   position: relative;
-  padding: clamp(1.25rem, 3vw, 2.5rem) 0 0;
+  padding: 0;
   /* L'accueil remplit tout l'écran : la section suivante n'apparaît qu'en défilant */
   display: flex; flex-direction: column;
   min-height: calc(100vh - var(--header-h) - 6px);
@@ -150,7 +150,7 @@ body, h1, h2, h3, p, dl, dd, figure, blockquote, ul, ol { margin: 0; }
 }
 .hero__grid, .hero__stats { position: relative; z-index: 1; }
 
-.hero__grid { flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 4rem); align-items: center; }
+.hero__grid { flex: 0 0 auto; margin-top: clamp(1.25rem, 4vh, 2.5rem); display: grid; grid-template-columns: 1.05fr 0.95fr; gap: clamp(2rem, 5vw, 4rem); align-items: center; }
 .hero__title { font-size: clamp(2.8rem, 7vw, 5rem); font-weight: 800; line-height: 1.15; letter-spacing: -0.035em; margin-bottom: 0.6rem; }
 .hero__role { font-size: clamp(1.25rem, 2.4vw, 1.7rem); font-weight: 600; line-height: 1.25; margin-bottom: 1.25rem; max-width: 22ch; }
 .hero__lead { font-size: 1.15rem; color: var(--muted); margin-bottom: 2rem; }
@@ -163,16 +163,16 @@ body, h1, h2, h3, p, dl, dd, figure, blockquote, ul, ol { margin: 0; }
   border: 1px solid #2a3756; border-radius: 14px;
 }
 .terminal__top {
-  display: flex; align-items: center; gap: 0.5rem;
-  padding: 0.9rem 1.2rem; background: #131b2b; border-bottom: 1px solid #2a3756;
-  font: 0.92rem var(--mono); color: #a3b0cf;
+  display: flex; align-items: center; gap: 0.4rem;
+  padding: 0.7rem 1rem; background: #131b2b; border-bottom: 1px solid #2a3756;
+  font: 0.82rem var(--mono); color: #a3b0cf;
 }
-.terminal__dot { width: 13px; height: 13px; border-radius: 50%; background: #2a3756; }
+.terminal__dot { width: 11px; height: 11px; border-radius: 50%; background: #2a3756; }
 .terminal__dot--red { background: #fb7185; }
 .terminal__dot--yellow { background: #fbbf24; }
 .terminal__dot--green { background: #34d399; }
 .terminal__title { margin-left: 0.6rem; }
-.terminal__body { padding: 1.7rem 1.8rem 2rem; font: 1.08rem/1.75 var(--mono); min-height: 24rem; }
+.terminal__body { padding: 1.3rem 1.4rem 1.5rem; font: 0.95rem/1.7 var(--mono); min-height: 17.5rem; }
 .terminal__line { overflow-wrap: anywhere; }
 .terminal__line--gap { margin-top: 0.7rem; }
 .terminal__line--out { color: #d9e1ff; }
@@ -499,14 +499,7 @@ body, h1, h2, h3, p, dl, dd, figure, blockquote, ul, ol { margin: 0; }
 }
 .contact-list__link:hover { text-decoration-thickness: 2px; }
 
-/* ===== Accueil : moins d'espace en haut, terminal plus grand, câble entièrement visible ===== */
-.hero {
-  padding-top: 1rem;
-  min-height: calc(100vh - var(--header-h) - 30px);
-  min-height: calc(100svh - var(--header-h) - 30px);
-}
-.hero__grid { align-items: center; gap: clamp(1.5rem, 4vw, 3rem); }
+/* Accueil : l'écran est rempli, le bandeau de chiffres reste en bas, peu d'espace en haut */
+.hero { min-height: calc(100vh - var(--header-h) - 30px); min-height: calc(100svh - var(--header-h) - 30px); }
+.hero__stats { margin-top: auto; }
 .stats { margin-top: 1.25rem; padding: 1rem 0 1.25rem; }
-.terminal__top { padding: 1rem 1.3rem; font-size: 1rem; }
-.terminal__dot { width: 14px; height: 14px; }
-.terminal__body { padding: 2rem 2.2rem 2.4rem; font-size: 1.2rem; line-height: 1.8; min-height: 27rem; }
