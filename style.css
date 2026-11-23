@@ -510,7 +510,3 @@ body, h1, h2, h3, p, dl, dd, figure, blockquote, ul, ol { margin: 0; }
   .js .nav__cta { margin: 0.5rem 0 0; text-align: center; }
 }
 
-/* Accueil : écriture comme la maquette (petite phrase de bienvenue + grand titre serré) */
-.hero__eyebrow { margin-bottom: 0.7rem; font-size: 1.15rem; font-weight: 600; color: var(--c-reseaux); }
-.hero__title { max-width: 16ch; margin-bottom: 1.2rem; font-size: clamp(2.3rem, 4.2vw, 3.7rem); font-weight: 800; line-height: 1.06; letter-spacing: -0.045em; }
-.hero__lead { font-size: 1.15rem; line-height: 1.65; margin-bottom: 1.6rem; }
